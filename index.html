@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Test</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <style>
+            .panel-body{height: 600;}
+        </style>
+        <script src="jquery-3.4.1.min.js" ></script>        
+        <script>
+            $(function(){
+                $( "#divLoad" ).load( "load.txt" );
+                $( "#divLoad2" ).load( "load2.txt" );
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">            
+            <div class="panel panel-primary">
+                    <div class="panel-heading">這是內文</div>
+                    <div class="panel-body">Test Test Test Test Test Test Test Test Test Test Test</div>
+            </div>   
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">這是 load 內容</div>
+                        <div class="panel-body" style="height: 630px;" id="divLoad"></div>
+                </div>                    
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">這是 load 內容 2</div>
+                        <div class="panel-body" id="divLoad2" style="height: 630px;"></div>
+                </div>                    
+                </div>                
+            </div>               
+
+                      
+        </div>
+               
+        
+    </body>
+</html>

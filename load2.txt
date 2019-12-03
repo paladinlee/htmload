@@ -1,0 +1,6 @@
+﻿<div class='text-center'>
+<img src="https://buzzorange.com/techorange/wp-content/uploads/sites/2/2019/12/notebook-mac-apple-book-board-technology-804630-pxhere.com_.jpg" alt="" class="img-rounded" width="304" height="236">
+</div>
+<br>
+世芯今年在 AI 趨勢帶動下，NRE（委託設計）開案量穩健成長，且進入 ASIC（特殊應用晶片）階段的 AI 晶片也陸續發酵，助攻今年前 10 月營收年增達雙位數，預計明年與中國客戶的合作將延伸至 7 奈米。<br><br>
+世芯指出，今年客戶 NRE 在採用製程上，以 16 奈米為主，預計明年在 AI、HPC（高效能運算）帶動下，晶片效能要求提高，已有多個客戶選擇使用 7 奈米製程，並預計部分個案可在明年設計定案，單案金額逾 1500 萬美元（約新台幣 4.6 億元），明顯多於 16 奈米，可望挹注明年營收、獲利。<br><br>
