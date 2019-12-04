@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Test</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <style>            
+            .wait{ background-color: blue;}
+            .done{ background-color: aquamarine;}
+        </style>
+        <script src="jquery-3.4.1.min.js" ></script>        
+ 
+    </head>
+    <body>
+        <div class="container">                
+              
+            <div class="row">
+                <div class="col-md-12"><button onclick="doCall()" class="btn btn-primary">Call</button></div>
+            </div>
+            <br>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">這是 call ajax </div>
+                <div class="panel-body" id="divAj"></div>
+        </div>            
+                      
+        </div>
+               
+        <script>
+
+            function doFill()
+            {
+                $.when($.ajax("aj.txt")).then(function(data,textStatus,jqXHR){
+                    $("#divAj").html('jqXHR.status:'+jqXHR.status+'<br>'+data.replace(/\n/g,"<br>"));                                        
+                });
+                $("#divAj").removeClass('wait');
+                $("#divAj").addClass('done');
+            }
+
+            function doCall()
+            {
+                $("#divAj").removeClass('done');     
+                $("#divAj").addClass('wait');      
+                $("#divAj").html('');          
+                window.setTimeout(()=>doFill(), 5*1000,'That was really slow!');
+               
+              
+            }
+        </script>
+    </body>
+</html>
